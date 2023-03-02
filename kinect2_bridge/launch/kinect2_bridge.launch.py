@@ -8,7 +8,7 @@ from launch_ros.descriptions import ComposableNode
 
 
 parameters=[    {'base_name': 'kinect2',
-                'sensor': '004436460547',
+                #'sensor': '004436460547',
                 'fps_limit': -1.0,
                 'use_png': False,
                 'jpeg_quality': 90,
