@@ -36,6 +36,13 @@ def generate_launch_description():
             parameters=parameters,
             output='screen')
     
+    rviz = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        output='log',
+        ) 
+   
 
     container = ComposableNodeContainer(
         name='container',
@@ -59,7 +66,7 @@ def generate_launch_description():
 
 
     return LaunchDescription([
-        kinect2, container
+        kinect2, container, rviz
     ])
 
 
